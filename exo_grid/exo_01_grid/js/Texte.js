@@ -1,4 +1,4 @@
-export default class Circle {
+export default class Texte {
   constructor(context) {
     this.ctx = context;
   }

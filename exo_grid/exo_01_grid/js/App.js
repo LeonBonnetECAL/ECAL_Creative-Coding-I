@@ -1,4 +1,5 @@
-import Circle from "./Circle.js";
+import Texte from "./Texte.js";
+import Circle from "./Texte.js";
 
 export default class App {
   constructor() {
@@ -21,7 +22,7 @@ export default class App {
   }
 
   createGrid() {
-    const monCercle = new Circle(this.ctx);
+    const monTexte = new Texte(this.ctx);
     let stepX = 30;
     let stepY = 30;
     let radius = 5;
@@ -31,7 +32,7 @@ export default class App {
     for (let i = 0; i < stepX; i++) {
       for (let j = 0; j < stepY; j++) {
         // do something
-        monCercle.draw(i * spaceX - radius/2 , j * spaceY + radius/2, radius);
+        monTexte.draw(i * spaceX - radius / 2, j * spaceY + radius / 2, radius);
         // monCercle.drawCross(i * spaceX, j * spaceY, +radius);
       }
     }
